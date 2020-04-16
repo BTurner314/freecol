@@ -3365,9 +3365,9 @@
         </optionGroup>
         <optionGroup id="model.difficulty.natives" editable="false">
           <integerOption id="model.option.landPriceFactor"
-                         value="40"/>
+                         value="30"/>
           <integerOption id="model.option.nativeConvertProbability"
-                         value="50"/>
+                         value="70"/>
           <integerOption id="model.option.burnProbability"
                          value="2"/>
           <integerOption id="model.option.nativeDemands"
@@ -3484,9 +3484,9 @@
         </optionGroup>
         <optionGroup id="model.difficulty.government" editable="false">
           <integerOption id="model.option.badGovernmentLimit"
-                         value="8"/>
-          <integerOption id="model.option.veryBadGovernmentLimit"
                          value="12"/>
+          <integerOption id="model.option.veryBadGovernmentLimit"
+                         value="18"/>
           <integerOption id="model.option.goodGovernmentLimit"
                          value="50"/>
           <integerOption id="model.option.veryGoodGovernmentLimit"
@@ -3585,9 +3585,9 @@
           <integerOption id="model.option.taxAdjustment"
                          value="1"/>
           <integerOption id="model.option.mercenaryPrice"
-                         value="60"/>
+                         value="40"/>
           <integerOption id="model.option.maximumTax"
-                         value="60"/>
+                         value="40"/>
           <integerOption id="model.option.monarchSupport"
                          value="3"/>
           <integerOption id="model.option.treasureTransportFee"
