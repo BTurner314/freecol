@@ -654,7 +654,7 @@ public class SimpleCombatModel extends CombatModel {
                 // Good defences reduce this proportion.
                 double offencePower = getOffencePower(attacker, defender);
                 double defencePower = getDefencePower(attacker, defender);
-                double diff = Math.max(3.0, defencePower * 2.0 - offencePower);
+                double diff = Math.max(2.0, defencePower * 2.0 - offencePower);
                 great = r < odds.win / diff;
 
                 // Sink the defender on great wins or lack of repair
