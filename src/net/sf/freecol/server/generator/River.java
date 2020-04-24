@@ -269,7 +269,7 @@ public class River {
         if (!riverType.isTileTypeAllowed(tile.getType())) {
             // Mountains, ocean cannot have rivers
             logger.fine("Tile (" + tile + ") can not have a river.");
-            return false;
+            return flow(tile);
         } else if (isNextToWater(tile)) {
             logger.fine("Tile (" + tile + ") is next to water.");
             return false;
@@ -305,11 +305,9 @@ public class River {
                 if (nextTile == null) continue;
 
                 // is the tile suitable for this river?
-                if (!other.riverType.isTileTypeAllowed(nextTile.getType())) {
-                    // Mountains, ocean cannot have rivers
-                    other.logger.fine("Tile (" + nextTile + ") can not have a river.");
-                    continue;
-                } else if (other.contains(nextTile)) {
+                
+                   
+                if (other.contains(nextTile)) {
                     other.logger.fine("Tile (" + nextTile + ") is already in river.");
                     continue;
                 } else if (other.isNextToSelf(nextTile)) {
