@@ -514,13 +514,13 @@ public class ColonyPlan {
                 }
             }
             if (nationType.hasModifier(g.getId())) {
-                value = (value * 12) / 10; // Bonus for national advantages
+                value = (value * 14) / 10; // Bonus for national advantages
             }
             if (value > secondaryValue && secondaryRawMaterial != null) {
                 production.remove(secondaryRawMaterial);
                 production.remove(secondaryRawMaterial.getOutputType());
                 if (rawLuxuryGoodsTypes.remove(secondaryRawMaterial)) {
-                    ;//luxuryGoodsTypes.remove(secondaryRawMaterial.getOutputType());
+                    //luxuryGoodsTypes.remove(secondaryRawMaterial.getOutputType());
                 } else {
                     otherRawGoodsTypes.remove(secondaryRawMaterial);
                 }

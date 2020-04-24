@@ -100,7 +100,7 @@ public final class Monarch extends FreeColGameObject implements Named {
     public static final int MONARCH_MINIMUM_PRICE = 200;
 
     /** The minimum price for a Hessian offer of mercenaries. */
-    public static final int HESSIAN_MINIMUM_PRICE = 5000;
+    public static final int HESSIAN_MINIMUM_PRICE = 4000;
 
     /**
      * The minimum tax rate (given in percentage) from where it
